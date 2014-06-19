@@ -86,21 +86,27 @@ void Playlist::keyPressEvent (QKeyEvent * e)
             break;
         case Qt::Key_Z:
             aud_drct_pl_prev ();
+            e->ignore();
             break;
         case Qt::Key_X:
             aud_drct_play ();
+            e->ignore();
             break;
         case Qt::Key_C:
             aud_drct_pause ();
+            e->ignore();
             break;
         case Qt::Key_V:
             aud_drct_stop ();
+            e->ignore();
             break;
         case Qt::Key_B:
             aud_drct_pl_next ();
+            e->ignore();
             break;
         case Qt::Key_Q:
             toggleQueue ();
+            e->ignore();
             break;
         }
         break;
